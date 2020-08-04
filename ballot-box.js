@@ -58,7 +58,7 @@ function main(year, month) {
   item.setTitle("氏名を記入してください。");
   item.setRequired(true);
 
-  // Ballot box
+  // Add voting section for agendas
   agendas.forEach(function (agenda, index) {
     var item = form.addListItem();
     item.setTitle("議題" + (index + 1) + "：　" + agenda.question);
